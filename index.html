@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Webcam Streamer</title>
+        <script src="main.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+
+    </head>
+    <body>
+        <div id="container">
+            <div class="overlayWrapper">
+                <video id="remote-video" autoplay="" width="640" height="480">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <div id="controls">
+            <button type=button id="pause" onclick="pause();" title="pause or resume local player">Pause/Resume</button>
+            <button type=button id="mute" onclick="mute();" title="mute or unmute remote audio source">Mute/Unmute</button>
+            <button type=button id="fullscreen" onclick="fullscreen();">Fullscreen</button>
+        </div>
+    </body>
+</html>
